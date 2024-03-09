@@ -14,7 +14,7 @@
 
 ### Demo Screeshots
 
-![Aizen Desktop Demo](./readme-images/desktop.png "Website Screen")
+![Aizen Desktop Demo](./desktop.png "Website Screen")
 
 ### Prerequisites
 
