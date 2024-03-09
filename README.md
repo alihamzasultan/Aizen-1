@@ -5,7 +5,7 @@
 
   <h2 align="center">Aizen - Digital Agency Website</h2>
 
-  Pixology is a fully responsive digital agency website, <br />Responsive for all devices, build using HTML, CSS, and JavaScript.
+  Aizen is a fully responsive digital agency website, <br />Responsive for all devices, build using HTML, CSS, and JavaScript.
 
 
 </div>
