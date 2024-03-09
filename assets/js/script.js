@@ -61,3 +61,5 @@ const headerActive = function () {
 }
 
 addEventOnElem(window, "scroll", headerActive);
+
+// script.js
