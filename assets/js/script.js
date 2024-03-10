@@ -63,3 +63,67 @@ const headerActive = function () {
 addEventOnElem(window, "scroll", headerActive);
 
 // script.js
+function toggleDarkMode() {
+  const body = document.body;
+  const darkModeIcon = document.getElementById('darkModeIcon');
+  const toggleButton = document.querySelector('.dark-mode-btn');
+
+  body.classList.toggle('dark-mode');
+
+  if (body.classList.contains('dark-mode')) {
+    darkModeIcon.setAttribute('name', 'sunny-outline');
+    applyDarkModeColors();
+  } else {
+    darkModeIcon.setAttribute('name', 'moon-outline');
+    resetColors();
+  }
+}
+
+function applyDarkModeColors() {
+  document.documentElement.style.setProperty('--sky-blue-crayola', ('hsl(188, 64%, 60%)'));
+  document.documentElement.style.setProperty('--raisin-black_90', ('hsla(240, 8%, 12%, 0.9)'));
+  document.documentElement.style.setProperty('--raisin-black-1', ('hsl(240, 8%, 17%)'));
+  document.documentElement.style.setProperty('--raisin-black-2', ('hsl(240, 8%, 12%)'));
+  document.documentElement.style.setProperty('--majorelle-blue', ('hsl(241, 77%, 63%)'));
+  document.documentElement.style.setProperty('--blue-ryb_80', ('hsla(241, 88%, 60%, 0.8)'));
+  document.documentElement.style.setProperty('--bittersweet', ('hsl(0, 100%, 69%)'));
+  document.documentElement.style.setProperty('--eerie-black', ('hsl(0, 0%, 13%)'));
+  document.documentElement.style.setProperty('--ghost-white', ('hsl(230, 60%, 98%)'));
+  document.documentElement.style.setProperty('--light-gray', ('hsl(0, 0%, 80%)'));
+  document.documentElement.style.setProperty('--slate-gray', ('hsl(225, 8%, 48%)'));
+  document.documentElement.style.setProperty('--cool-gray', ('hsl(225, 11%, 59%)'));
+  document.documentElement.style.setProperty('--gainsboro', ('hsl(217, 16%, 90%)'));
+  document.documentElement.style.setProperty('--mustard', ('hsl(51, 100%, 50%)'));
+  document.documentElement.style.setProperty('--white', ('hsl(0, 0%, 100%)'));
+  document.documentElement.style.setProperty('--black', ('hsl(0, 0%, 0%)'));
+  document.documentElement.style.setProperty('--onyx', ('hsl(240, 5%, 26%)'));
+  document.documentElement.style.setProperty('--jet', ('hsl(0, 0%, 21%)'));
+
+  document.getElementById('darkModeIcon').style.color = '#FFA500';
+}
+
+function resetColors() {
+  document.documentElement.style.setProperty('--sky-blue-crayola', 'hsl(188, 64%, 40%)');
+  document.documentElement.style.setProperty('--raisin-black_90', 'hsla(230, 60%, 98%)');
+  document.documentElement.style.setProperty('--raisin-black-1', 'hsl(230, 60%, 98%)');
+  document.documentElement.style.setProperty('--raisin-black-2', 'hsl(230, 60%, 98%)');
+  document.documentElement.style.setProperty('--majorelle-blue', 'hsl(241, 77%, 63%)');
+  document.documentElement.style.setProperty('--blue-ryb_80', 'hsla(241, 88%, 40%, 0.8)');
+  document.documentElement.style.setProperty('--bittersweet', 'hsl(0, 100%, 39%)');
+  document.documentElement.style.setProperty('--eerie-black', 'hsl(0, 0%, 8%)');
+  document.documentElement.style.setProperty('--ghost-white', 'hsl(240, 8%, 17%)');
+  document.documentElement.style.setProperty('--light-gray', 'hsl(0, 0%, 60%)');
+  document.documentElement.style.setProperty('--slate-gray', 'hsl(225, 8%, 28%)');
+  document.documentElement.style.setProperty('--cool-gray', 'hsl(230, 60%, 98%)');
+  document.documentElement.style.setProperty('--gainsboro', 'hsl(230, 60%, 98%)');
+  document.documentElement.style.setProperty('--mustard', 'hsl(51, 100%, 50%)');
+  document.documentElement.style.setProperty('--white', 'hsl(0, 0%, 21%)');
+  document.documentElement.style.setProperty('--black', 'hsl(0, 0%, 90%)');
+  document.documentElement.style.setProperty('--onyx', 'hsl(240, 5%, 16%)');
+  document.documentElement.style.setProperty('--jet', 'hsl(0, 0%, 15%)');
+
+  document.getElementById('darkModeIcon').style.color = '#3498db';
+}
+
+
+
