@@ -40,6 +40,7 @@
   --jet: hsl(0, 0%, 21%);
   --foot:hsl(240, 8%, 12%);
   --foottxt:hsl(230, 60%, 98%);
+  color: #ffffff;
 
   
 
@@ -1475,4 +1476,6 @@ body {
   .blog-card .card-title { --fs-4: 2.4rem; }
 
 }
-
+span{
+  color: #000000;
+}

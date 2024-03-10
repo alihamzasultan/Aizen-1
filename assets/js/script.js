@@ -123,6 +123,7 @@ function resetColors() {
   document.documentElement.style.setProperty('--jet', 'hsl(0, 0%, 15%)');
 
   document.getElementById('darkModeIcon').style.color = '#3498db';
+  
 }
 
 
