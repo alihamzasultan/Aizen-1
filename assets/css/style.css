@@ -1448,6 +1448,10 @@ body {
   .dropdown-content a:hover {
     background-color: #f1f1f1; /* Lighter background color on hover */
   }
+  .navbar-link1::after {
+    content: "▼"; /* Unicode for the down arrow */
+  }
+  
   
   
   /**
