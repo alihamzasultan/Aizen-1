@@ -38,7 +38,13 @@
   --black: hsl(0, 0%, 0%);
   --onyx: hsl(240, 5%, 26%);
   --jet: hsl(0, 0%, 21%);
+  --foot:hsl(240, 8%, 12%);
+  --foottxt:hsl(230, 60%, 98%);
 
+  
+
+  
+  
   /**
    * gradient
    */
@@ -162,9 +168,9 @@ body {
 
 ::-webkit-scrollbar { width: 10px; }
 
-::-webkit-scrollbar-track { background-color: hsl(0, 0%, 98%); }
+::-webkit-scrollbar-track { background-color: hsl(0, 1%, 26%); }
 
-::-webkit-scrollbar-thumb { background-color: hsl(0, 0%, 80%); }
+::-webkit-scrollbar-thumb { background-color: hsl(49, 100%, 50%); }
 
 ::-webkit-scrollbar-thumb:hover { background-color: hsl(0, 0%, 70%); }
 
@@ -703,7 +709,7 @@ body {
   #NEWSLETTER
 \*-----------------------------------*/
 
-.newsletter { color: var(--white); }
+.newsletter { color: var(--foottxt); }
 
 .newsletter .container {
   display: grid;
@@ -715,7 +721,7 @@ body {
 .newsletter .section-subtitle { color: var(--light-gray); }
 
 .newsletter .section-title {
-  color: var(--white);
+  color: var(--foottxt);
   margin-block: 20px 35px;
 }
 
@@ -826,8 +832,8 @@ body {
 \*-----------------------------------*/
 
 .footer {
-  background-color: var(--raisin-black-1);
-  color: var(--cool-gray);
+  background-color: var(--foot);
+  color: var(--foottxt);
 }
 
 .footer-top {
@@ -837,7 +843,7 @@ body {
 }
 
 .footer-list-title {
-  color: var(--white);
+  color: var(--light-gray);
   font-size: var(--fs-5);
   font-weight: var(--fw-500);
   margin-block-end: 20px;
@@ -894,7 +900,7 @@ body {
 .insta-card:is(:hover, :focus-within) .card-content { opacity: 1; }
 
 .footer-bottom {
-  color: var(--white);
+  color: var(--light-gray);
   font-size: var(--fs-8);
   padding-block: 40px;
   border-block-start: 1px solid var(--onyx);
@@ -1470,21 +1476,3 @@ body {
 
 }
 
-/* Add this to your existing CSS or create a new style.css file */
-
-.hero-video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.hero-content {
-  position: relative; /* Ensure content is positioned on top of the video */
-  z-index: 1; /* Set a higher z-index to overlay content on top of the video */
-}
-
-/* Other existing styles for the hero section */
-/* Add this to your existing CSS or create a new style.css file */
