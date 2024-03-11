@@ -77,9 +77,7 @@
             <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
           </li>
 
-          <button class="dark-mode-btn" aria-label="toggle dark mode" onclick="toggleDarkMode()">
-            <ion-icon id="darkModeIcon" name="sunny-outline" aria-hidden="true"></ion-icon>
-          </button>
+
           
 
         </ul>
@@ -121,7 +119,32 @@
            -->
 
           <div class="hero-content">
-
+            <style>
+              .hero-title {
+                font-size: 3em;
+                text-align: center;
+                margin: 0;
+                padding: 20px;
+                background: linear-gradient(45deg, #000000, #000000, #ffffff, #000000, #000000);
+                background-size: 400% 400%;
+                color: transparent;
+                background-clip: text;
+                -webkit-background-clip: text;
+                animation: gradientAnimation 15s ease infinite;
+              }
+            
+              @keyframes gradientAnimation {
+                0% {
+                  background-position: 0% 50%;
+                }
+                50% {
+                  background-position: 100% 50%;
+                }
+                100% {
+                  background-position: 0% 50%;
+                }
+              }
+            </style>
             <h1 class="h1 hero-title">
               Building Digital Product, Brand and Experience
             </h1>

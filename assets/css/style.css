@@ -31,9 +31,9 @@
   --ghost-white: hsl(230, 60%, 98%);
   --light-gray: hsl(0, 0%, 80%);
   --slate-gray: hsl(225, 8%, 48%);
-  --cool-gray: hsl(225, 11%, 59%);
+  --cool-gray: hsl(0, 0%, 0%);
   --gainsboro: hsl(217, 16%, 90%);
-  --mustard: hsl(51, 100%, 50%);
+
   --white: hsl(0, 0%, 100%);
   --black: hsl(0, 0%, 0%);
   --onyx: hsl(240, 5%, 26%);
@@ -1068,6 +1068,26 @@ body {
   /**
    * HERO
    */
+body {
+  display: grid;
+  gap: 70px;
+
+  background: linear-gradient(45deg, #00aeff, #0011ff, #00ffff, #3d3fbd, #ffffff);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 
   .hero .container { gap: 120px; }
 
