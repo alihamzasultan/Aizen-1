@@ -194,7 +194,13 @@ body {
   color: var(--black);
   font-size: var(--fs-1);
   line-height: 1.1;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: left; /* Center the heading horizontally */
+  margin-bottom: 100%;
 }
+
 
 .h2,
 .h3 { color: var(--raisin-black-1); }
@@ -465,7 +471,10 @@ body {
 .hero .container {
   display: grid;
   gap: 70px;
+  height: 70vh;
+  width: 70%; /* Cover the entire viewport width */
 }
+
 
 .hero-text {
   font-size: var(--fs-7);
