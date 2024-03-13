@@ -6,6 +6,30 @@
  * copyright 2022 codewithsadee
  */
 
+/* Navbar styles */
+
+
+
+
+
+
+/* Highlight active page */
+
+.navbar-link.active {
+  color: #fff; /* Change to your desired active color */
+  border-color: #000000; /* Change to your desired active border color */
+  animation: glow 1s infinite alternate; /* Glowing effect */
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px #00a2ff, 0 0 10px #00a2ff, 0 0 15px #00a2ff;
+  }
+  to {
+    text-shadow: 0 0 10px #00a2ff, 0 0 15px #00a2ff, 0 0 20px #00a2ff;
+  }
+}
+/* End Navbar styles */
 
 
 
@@ -24,7 +48,7 @@
   --raisin-black_90: hsla(240, 8%, 12%, 0.9);
   --raisin-black-1: hsl(240, 8%, 17%);
   --raisin-black-2: hsl(240, 8%, 12%);
-  --majorelle-blue: hsl(241, 77%, 63%);
+  --majorelle-blue: hsl(225, 8%, 48%);
   --blue-ryb_80: hsla(241, 88%, 60%, 0.8);
   --bittersweet: hsl(0, 100%, 69%);
   --eerie-black: hsl(0, 0%, 13%);
@@ -38,7 +62,7 @@
   --black: hsl(0, 0%, 0%);
   --onyx: hsl(240, 5%, 26%);
   --jet: hsl(0, 0%, 21%);
-  --foot:hsl(240, 8%, 12%);
+  --foot:hsl(192, 100%, 17%);
   --foottxt:hsl(230, 60%, 98%);
   color: #ffffff;
 
@@ -60,7 +84,7 @@
 
   --fs-1: 4rem;
   --fs-2: 3.5rem;
-  --fs-3: 2.4rem;
+  --fs-3: 1.8rem;
   --fs-4: 2.2rem;
   --fs-5: 2rem;
   --fs-6: 1.8rem;
@@ -171,7 +195,7 @@ body {
 
 ::-webkit-scrollbar-track { background-color: hsl(0, 1%, 26%); }
 
-::-webkit-scrollbar-thumb { background-color: hsl(49, 100%, 50%); }
+::-webkit-scrollbar-thumb { background-color: hsl(199, 100%, 50%); }
 
 ::-webkit-scrollbar-thumb:hover { background-color: hsl(0, 0%, 70%); }
 
@@ -610,7 +634,7 @@ body {
 
 .feature-card .card-icon {
   background-color: hsla(var(--color), 0.15);
-  font-size: 24px;
+  font-size: 20px;
   max-width: max-content;
   padding: 18px;
   border-radius: 50%;
@@ -1072,7 +1096,7 @@ body {
   display: grid;
   gap: 70px;
 
-  background: linear-gradient(45deg, #00aeff, #0011ff, #00ffff, #3d3fbd, #ffffff);
+  background: linear-gradient(45deg, #ffffff, #ffffff, #00b7ff, #ffffff, #ffffff);
   background-size: 400% 400%;
   animation: gradientAnimation 15s ease infinite;
 }
@@ -1135,7 +1159,7 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 25px;
+    gap: 20px;
   }
 
   .feature-card .card-icon { margin-block-end: 0; }
