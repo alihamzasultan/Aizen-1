@@ -54,7 +54,7 @@
   --eerie-black: hsl(0, 0%, 13%);
   --ghost-white: hsl(230, 60%, 98%);
   --light-gray: hsl(0, 0%, 80%);
-  --slate-gray: hsl(0, 100%, 50%);
+  --slate-gray: hsl(0, 100%, 45%);
   --cool-gray: hsl(0, 0%, 0%);
   --gainsboro: hsl(217, 16%, 90%);
 
@@ -866,82 +866,62 @@ body {
   #FOOTER
 \*-----------------------------------*/
 
+/*-----------------------------------*\
+  #FOOTER
+\*-----------------------------------*/
+
 .footer {
   background-color: var(--foot);
   color: var(--foottxt);
+  padding: 20px 0; /* Add padding for spacing */
+}
+
+/* Use inline-block to adjust the width based on content */
+.footer-top,
+.footer-bottom {
+  display: inline-block;
+  width: auto; /* Width adjusted based on content */
 }
 
 .footer-top {
-  padding-block-end: 60px;
-  display: grid;
-  gap: 50px;
+  margin-bottom: 20px; /* Add margin for spacing */
 }
 
 .footer-list-title {
   color: var(--light-gray);
   font-size: var(--fs-5);
   font-weight: var(--fw-500);
-  margin-block-end: 20px;
+  margin-bottom: 10px; /* Adjust margin for spacing */
 }
-
-.footer-text { margin-block-end: 30px; }
-
-.footer .social-list { gap: 12px; }
 
 .footer .social-link {
   background-color: var(--onyx);
-  padding: 14px;
+  padding: 10px; /* Adjust padding for spacing */
   border-radius: 50%;
   transition: var(--transition-1);
 }
 
-.footer .social-link:is(:hover, :focus) {
+.footer .social-link:hover,
+.footer .social-link:focus {
   background-color: var(--majorelle-blue);
   color: var(--white);
 }
 
 .footer-link {
   font-size: var(--fs-8);
-  margin-block-start: 15px;
+  margin-top: 10px; /* Adjust margin for spacing */
   transition: var(--transition-1);
 }
 
-.footer-link:is(:hover, :focus) { color: var(--mustard); }
-
-.insta-post {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--mustard);
 }
-
-.insta-card {
-  position: relative;
-  border-radius: var(--radius-10);
-  overflow: hidden;
-}
-
-.insta-card .card-content {
-  position: absolute;
-  inset: 0;
-  display: grid;
-  place-content: center;
-  background-color: var(--blue-ryb_80);
-  color: var(--white);
-  font-size: 25px;
-  opacity: 0;
-  transition: var(--transition-1);
-}
-
-.insta-card:is(:hover, :focus-within) .card-content { opacity: 1; }
 
 .footer-bottom {
   color: var(--light-gray);
   font-size: var(--fs-8);
-  padding-block: 40px;
-  border-block-start: 1px solid var(--onyx);
 }
-
-.copyright { margin-block-end: 15px; }
 
 .footer-bottom-list {
   display: flex;
@@ -949,11 +929,14 @@ body {
   gap: 5px 15px;
 }
 
-.footer-bottom-link { transition: var(--transition-1); }
+.footer-bottom-link {
+  transition: var(--transition-1);
+}
 
-.footer-bottom-link:is(:hover, :focus) { color: var(--mustard); }
-
-
+.footer-bottom-link:hover,
+.footer-bottom-link:focus {
+  color: var(--mustard);
+}
 
 
 
