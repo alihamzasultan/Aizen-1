@@ -54,7 +54,7 @@
   --eerie-black: hsl(0, 0%, 13%);
   --ghost-white: hsl(230, 60%, 98%);
   --light-gray: hsl(0, 0%, 80%);
-  --slate-gray: hsl(225, 8%, 48%);
+  --slate-gray: hsl(56, 100%, 50%);
   --cool-gray: hsl(0, 0%, 0%);
   --gainsboro: hsl(217, 16%, 90%);
 
@@ -186,7 +186,8 @@ body {
   background-color: var(--white);
   color: var(--slate-gray);
   font-size: 1.6rem;
-  line-height: 1.75;
+  margin-top: 30px;
+
 }
 
 :focus-visible { outline-offset: 4px; }
@@ -1096,7 +1097,7 @@ body {
   display: grid;
   gap: 70px;
 
-  background: linear-gradient(45deg, #ffffff, #ffffff, #00b7ff, #ffffff, #ffffff);
+  background: linear-gradient(45deg, #ffffff, #ffffff, #616161, #ffffff, #ffffff);
   background-size: 400% 400%;
   animation: gradientAnimation 15s ease infinite;
 }
@@ -1531,4 +1532,157 @@ body {
 }
 span{
   color: #000000;
+}
+
+
+.hero-title {
+  font-size: 3em;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+  background: linear-gradient(45deg, #000000, #000000, #ffffff, #000000, #000000);
+  background-size: 400% 400%;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: gradientAnimation 15s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.typing-section {
+  display: flex;
+  justify-content: left; /* Center content horizontally */
+  align-items: flex-start; /* Align content to the top */
+  height: 100px; /* Set a fixed height for the section */
+  margin-top: 20px; /* Add margin to create space above the section */
+                text-align: left;
+                margin: 0;
+                padding: 20px;
+}
+
+.typing-effect {
+  font-size: 1.5em; /* Adjust font size as needed */
+  margin-top: 10px; /* Add margin to create space above the text */
+}
+
+.typing-cursor {
+  display: inline-block;
+  vertical-align: top; /* Adjust vertical alignment */
+  width: 0.5em; /* Adjust the width of the cursor */
+  height: 1em; /* Adjust the height of the cursor */
+  background-color: black; /* Change cursor color if needed */
+  animation: blinkCursor 0.7s infinite; /* Blinking animation */
+  margin-left: 5px; /* Add spacing between text and cursor */
+}
+
+@keyframes blinkCursor {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+
+
+/* Footer Styles */
+
+.footer {
+  background-color: #242424;
+  color: #fff;
+  padding: 50px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-brand {
+  flex: 1 1 300px;
+  max-width: 300px;
+}
+
+.footer-brand p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.footer-text {
+  font-size: 16px;
+}
+
+.social-list {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.social-list li {
+  margin-right: 10px;
+}
+
+.social-link {
+  color: #fff;
+  font-size: 24px;
+}
+
+.footer-list {
+  flex: 1 1 200px;
+  max-width: 200px;
+  margin-right: 20px;
+}
+
+.footer-list-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-link {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+  .footer-top {
+    flex-direction: column;
+  }
+
+  .footer-brand, .footer-list {
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
 }

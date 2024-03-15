@@ -62,3 +62,53 @@ const headerActive = function () {
 
 addEventOnElem(window, "scroll", headerActive);
 
+
+/**
+ * typing
+ */
+
+const services = [
+  "Building Digital Products",
+  "Building Brands",
+  "Creating Experiences",
+  "Designing Interfaces",
+  "Optimizing User Experience",
+  "Developing Mobile Apps",
+  "Implementing Web Solutions"
+];
+
+const heroTitle = document.getElementById('typed-text');
+let currentIndex = 0;
+let currentText = '';
+let letterIndex = 0;
+let isDeleting = false;
+
+function type() {
+  const currentService = services[currentIndex];
+  if (!isDeleting) {
+    currentText = currentService.substring(0, letterIndex + 1);
+    heroTitle.textContent = currentText;
+    letterIndex++;
+    if (currentText === currentService) {
+      isDeleting = true;
+      setTimeout(type, 1000);
+    } else {
+      setTimeout(type, 10);
+    }
+  } else {
+    currentText = currentService.substring(0, letterIndex - 1);
+    heroTitle.textContent = currentText;
+    letterIndex--;
+    if (currentText === '') {
+      isDeleting = false;
+      currentIndex = (currentIndex + 1) % services.length;
+    }
+    setTimeout(type, 50);
+  }
+}
+
+type(); // Start typing effect
+
+
+
+

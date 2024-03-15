@@ -1,253 +1,292 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AiZEN</title>
-  
-    <!-- 
-      - favicon
-    -->
-    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
-  
-    <!-- 
-      - custom css link
-    -->
-    <link rel="stylesheet" href="./assets/css/style.css">
-  
-    <!-- 
-      - google font link
-    -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-  
-    <!-- 
-      - preload images
-    -->
-    <link rel="preload" as="image" href="./assets/images/hero-banner.png">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <header class="header" data-header>
-        <div class="container">
-    
-          <a href="#" class="logo">AiZEN</a>
-    
-          <nav class="navbar" data-navbar>
-    
-            <div class="wrapper">
-              <a href="#" class="logo">AiZEN</a>
-    
-              <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
-                <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
-              </button>
-            </div>
-    
-            <ul class="navbar-list">
-    
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AiZEN</title>
+      
+        <!-- 
+          - favicon
+        -->
+        <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+      
+        <!-- 
+          - custom css link
+        -->
+        <link rel="stylesheet" href="./assets/css/style.css">
+      
+        <!-- 
+          - google font link
+        -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+      
+        <!-- 
+          - preload images
+        -->
+        <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+      
+      </head>
+      
+      <body id="top">
+      
+      
+        <!-- 
+          - #HEADER
+        -->
+      
+        <header class="header" data-header>
+          <div class="container">
+      
+            <a href="#" class="logo">AIZEN</a>
+      
+      
+            <nav class="navbar" data-navbar>
+      
+              <div class="wrapper">
+                <a href="#" class="logo">AiZEN</a>
+      
+                <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+                  <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+                </button>
+              </div>
+      
+              <ul class="navbar-list">
+      
+            
+      
+                <li class="navbar-item">
+                  <a href="index.html" class="navbar-link" data-nav-link>Home</a>
+                </li>
+      
+                <li class="navbar-item">
+                  <a href="services.html" class="navbar-link" data-nav-link>Services</a>
+                </li>
+                
+      
+                <li class="navbar-item">
+                  <a href="reviews.html" class="navbar-link" data-nav-link>Reviews</a>
+                </li>
+      
+                <li class="navbar-item">
+                  <a href="projects.html" class="navbar-link" data-nav-link>Projects</a>
+                </li>
+      
+      
+      
+      
+                
+      
+              </ul>
+      
+            </nav>
+      
+            <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+              <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+            </button>
+      
           
-    
-              <li class="navbar-item">
-                <a href="index.html" class="navbar-link" data-nav-link>Home</a>
-              </li>
-    
-              <li class="navbar-item">
-                <a href="services.html" class="navbar-link" data-nav-link>Services</a>
-              </li>
-    
-              <li class="navbar-item">
-                <a href="reviews.html" class="navbar-link" data-nav-link>Reviews</a>
-              </li>
-    
-              <li class="navbar-item">
-                <a href="projects.html" class="navbar-link active" data-nav-link>Projects</a>
-              </li>
-    
-              
-    
-              
-    
-            </ul>
-    
-          </nav>
-    
-          <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
-            <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
-          </button>
-    
-        
-    
-          <a href="#" class="btn btn-primary has-before has-after">Let’s Talk</a>
-    
-          <div class="overlay" data-nav-toggler data-overlay></div>
-    
-        </div>
-      </header>
-  <main>
-    <article>
-      <!-- Services Section content (replace with your actual content) -->
-      <section class="section service" id="service" aria-label="service">
-        <div class="container">
-            <section class="section service" id="service" aria-label="service">
-                <div class="container">
-        
-                  <p class="section-subtitle has-before text-center">Our Services</p>
-        
-                  <h2 class="h2 section-title text-center">Managing your business with our best
-                      service</h2>
-        
-                  <ul class="grid-list">
-        
-                    <li>
-                      <div class="service-card" style="--color: 174, 77%, 50%">
-        
-                        <div class="card-icon">
-                          <img src="./assets/images/service-icon-1.png" width="30" height="30" loading="lazy"
-                            alt="service icon">
-                        </div>
-        
-                        <h3 class="h3">
-                          <a href="#" class="card-title">Product Management</a>
-                        </h3>
-        
-                      </div>
-                    </li>
-        
-                    <li>
-                      <div class="service-card" style="--color: 267, 76%, 57%">
-        
-                        <div class="card-icon">
-                          <img src="./assets/images/service-icon-2.png" width="30" height="30" loading="lazy"
-                            alt="service icon">
-                        </div>
-        
-                        <h3 class="h3">
-                          <a href="#" class="card-title">Web & Mobile Development</a>
-                        </h3>
-        
-                      </div>
-                    </li>
-        
-                    <li>
-                      <div class="service-card" style="--color: 17, 100%, 68%">
-        
-                        <div class="card-icon">
-                          <img src="./assets/images/service-icon-3.png" width="30" height="30" loading="lazy"
-                            alt="service icon">
-                        </div>
-        
-                        <h3 class="h3">
-                          <a href="#" class="card-title">Fast Customer Support</a>
-                        </h3>
-        
-                      </div>
-                    </li>
-        
-                    <li>
-                      <div class="service-card" style="--color: 343, 98%, 60%">
-        
-                        <div class="card-icon">
-                          <img src="./assets/images/service-icon-4.png" width="30" height="30" loading="lazy"
-                            alt="service icon">
-                        </div>
-        
-                        <h3 class="h3">
-                          <a href="#" class="card-title">Human Resources</a>
-                        </h3>
-        
-                      </div>
-                    </li>
-        
-                    <li>
-                      <div class="service-card" style="--color: 210, 100%, 53%">
-        
-                        <div class="card-icon">
-                          <img src="./assets/images/service-icon-5.png" width="30" height="30" loading="lazy"
-                            alt="service icon">
-                        </div>
-        
-                        <h3 class="h3">
-                          <a href="#" class="card-title">Design and Vreatives</a>
-                        </h3>
-        
-                      </div>
-                    </li>
-        
-                    <li>
-                      <div class="service-card" style="--color: 157, 89%, 44%">
-        
-                        <div class="card-icon">
-                          <img src="./assets/images/service-icon-6.png" width="30" height="30" loading="lazy"
-                            alt="service icon">
-                        </div>
-        
-                        <h3 class="h3">
-                          <a href="#" class="card-title">Meketing and Communication</a>
-                        </h3>
-        
-                      </div>
-                    </li>
-        
-                    <li>
-                      <div class="service-card" style="--color: 52, 98%, 50%">
-        
-                        <div class="card-icon">
-                          <img src="./assets/images/service-icon-7.png" width="30" height="30" loading="lazy"
-                            alt="service icon">
-                        </div>
-        
-                        <h3 class="h3">
-                          <a href="#" class="card-title">Business Development</a>
-                        </h3>
-        
-                      </div>
-                    </li>
-        
-                    <li>
-                      <a href="#" class="link-card" style="--color: 203, 97%, 75%">
-                        <span class="span">04 More Service</span>
-        
-                        <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-                      </a>
-                    </li>
-        
-                  </ul>
-        
-                </div>
-              </section>
-        </div>
-      </section>
-    </article>
-  </main>
-  <footer class="footer">
-    <!-- Footer content (same as in your provided HTML) -->
-  </footer>
-  <a href="#top" class="back-top-btn has-after active" aria-label="back to top" data-back-top-btn>
-    <!-- Back to top button content (same as in your provided HTML) -->
-  </a>
- 
-  <!-- 
-    - #BACK TO TOP
-  -->
+      
+            <a href="#" class="btn btn-primary has-before has-after">Let’s Talk</a>
+      
+            <div class="overlay" data-nav-toggler data-overlay></div>
+      
+          </div>
+        </header>
+      
+      
+      
+      
+      
+        <main>
+          <article>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects Completed - AiZEN</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Include Slick Carousel CSS -->
+  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+  <style>
+    /* Add your additional styles here */
 
-  <a href="#top" class="back-top-btn has-after active" aria-label="back to top" data-back-top-btn>
-    <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
-  </a>
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background-color: #f8f8f8;
+      margin: 0;
+      padding: 0;
+    }
 
+    section {
+      max-width: 1200px;
+      margin: 50px auto 50px;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
 
+    .project-card {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      margin: 10px;
+      transition: transform 0.3s ease;
+    }
 
+    .project-card:hover {
+      transform: scale(1.02);
+    }
 
+    .project-image {
+      width: 100%;
+      max-height: 200px;
+      object-fit: cover;
+    }
 
-  <!-- 
-    - custom js link
-  -->
-  <script src="./assets/js/script.js" defer></script>
+    .project-details {
+      padding: 15px;
+    }
 
-  <!-- 
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    .project-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
 
+    .project-description {
+      color: #555;
+    }
+
+    .project-slider {
+      margin-top: 15px;
+    }
+
+    .project-slider img {
+      width: 150px; /* Adjust the width of each image */
+      height: 150px; /* Adjust the height of each image */
+      object-fit: cover;
+      border-radius: 10%; /* Create circular images */
+      margin-right: 10px;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .project-slider img:hover {
+      transform: scale(1.1);
+    }
+
+    /* Additional styles for the hover window */
+    .hover-window {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      max-width: 80%;
+      max-height: 80%;
+      overflow: auto; /* Add scroll bar */
+      box-shadow: 0 0 20px rgba(0, 119, 255, 0.3);
+      border-radius: 10px;
+      padding: 20px;
+      background-color: #fff;
+    }
+
+    .hover-image {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .close-text {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      font-size: 14px;
+      color: #555;
+      cursor: pointer;
+    }
+
+  </style>
+</head>
+<body>
+
+  <section>
+    <div class="project-card">
+      <div class="project-details">
+        <h2 class="project-title">Project 1</h2>
+        <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget metus ac arcu dictum fermentum id ut libero.</p>
+      </div>
+      <div class="project-slider">
+        <img src="./assets/images/feature-banner.png" alt="Project 1 Slide 1" onclick="openHoverWindow('./assets/images/feature-banner.png')">
+        <img src="./assets/images/feature-banner.png" alt="Project 1 Slide 2" onclick="openHoverWindow('./assets/images/feature-banner.png')">
+        <!-- Add more slides for Project 1 as needed -->
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-details">
+        <h2 class="project-title">Project 2</h2>
+        <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget metus ac arcu dictum fermentum id ut libero.</p>
+      </div>
+      <div class="project-slider">
+        <img src="./assets/images/feature-banner.png" alt="Project 2 Slide 1" onclick="openHoverWindow('./assets/images/feature-banner.png')">
+        <img src="./assets/images/project-5.jpg" alt="Project 2 Slide 2" onclick="openHoverWindow('./assets/images/project-5.jpg')">
+        <!-- Add more slides for Project 2 as needed -->
+      </div>
+    </div>
+
+    <!-- Add more project cards as needed -->
+
+    <!-- Hover window for larger image display -->
+    <div id="hoverWindow" class="hover-window" onclick="closeHoverWindow()">
+      <img id="hoverImage" class="hover-image" src="" alt="Hover Image">
+      <div class="close-text">Click to Close</div>
+    </div>
+  </section>
+
+  <!-- Include Slick Carousel JavaScript -->
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+  <script>
+    // Initialize Slick Carousel
+    document.addEventListener('DOMContentLoaded', function () {
+      $('.project-slider').slick({
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 4, /* Adjust the number of visible slides */
+        slidesToScroll: 1,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 3, /* Adjust the number of visible slides for smaller screens */
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1, /* Adjust the number of visible slides for even smaller screens */
+            }
+          }
+        ]
+      });
+    });
+
+    // Open hover window function
+    function openHoverWindow(imagePath) {
+      document.getElementById('hoverImage').src = imagePath;
+      document.getElementById('hoverWindow').style.display = 'block';
+    }
+
+    // Close hover window function
+    function closeHoverWindow() {
+      document.getElementById('hoverWindow').style.display = 'none';
+    }
+  </script>
 </body>
 </html>
