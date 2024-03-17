@@ -112,3 +112,34 @@ type(); // Start typing effect
 
 
 
+const footer = document.getElementById('footer');
+const footerArrow = document.getElementById('footerArrow');
+const openFooterBtn = document.getElementById('openFooterBtn');
+
+openFooterBtn.addEventListener('click', function() {
+  footer.classList.toggle('active');
+  footerArrow.classList.toggle('active');
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+  const elements = document.querySelectorAll('.newsletter-banner img, .newsletter-content');
+  const offset = 100; // Adjust this value based on your needs
+
+  function checkVisibility() {
+      const windowHeight = window.innerHeight;
+      const scrollY = window.scrollY || window.pageYOffset;
+
+      elements.forEach(element => {
+          const elementTop = element.getBoundingClientRect().top + scrollY;
+
+          if (scrollY + windowHeight - offset > elementTop) {
+              element.classList.add('animated');
+          }
+      });
+  }
+
+  window.addEventListener('scroll', checkVisibility);
+  checkVisibility(); // Check on initial load
+});
+
+
