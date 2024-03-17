@@ -1362,7 +1362,46 @@ body {
   .navbar-list { gap: 50px; }
 
 
-
+  /**
+   * dropdown
+   */
+   .dropdown {
+    position: relative;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff; /* White background */
+    border: 1px solid #ddd; /* Add a border */
+    border-radius: 4px; /* Rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    z-index: 1;
+    padding: 8px 0; /* Add padding */
+    min-width: 120px;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown-content a {
+    color: #333; /* Dark text color */
+    padding: 10px 20px; /* Adjust padding */
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease; /* Smooth transition */
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f1f1f1; /* Lighter background color on hover */
+  }
+  .navbar-link1::after {
+    content: "▼"; /* Unicode for the down arrow */
+  }
+  
+  
+  
   /**
    * HERO
    */
