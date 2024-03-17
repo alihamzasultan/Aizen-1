@@ -16,6 +16,10 @@
 
 ![Aizen Desktop Demo](./readme-images/desktop.PNG "Website Screen")
 
+### Live Preview
+
+https://fasihahmedraza.github.io/Aizen/#
+
 ### Prerequisites
 
 Before you begin, ensure you have met the following requirements:
