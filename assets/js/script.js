@@ -163,3 +163,14 @@ const target = document.getElementById('services');
 if (target) {
   observer.observe(target);
 }
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const dropdownBtn = document.querySelector('[data-dropdown-btn]');
+  const dropdownMenu = document.querySelector('.dropdown-menu');
+
+  dropdownBtn.addEventListener('click', function(event) {
+    event.preventDefault();
+    dropdownMenu.classList.toggle('show');
+  });
+});
