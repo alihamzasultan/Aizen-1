@@ -143,3 +143,23 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
+// Function to handle the intersection observer callback
+function handleIntersection(entries, observer) {
+  entries.forEach(entry => {
+      if (entry.isIntersecting) {
+          entry.target.classList.add('fade-in');
+          observer.unobserve(entry.target);
+      }
+  });
+}
+
+// Create a new intersection observer
+const observer = new IntersectionObserver(handleIntersection, { rootMargin: '0px', threshold: 0.5 });
+
+// Select the target element
+const target = document.getElementById('services');
+
+// Start observing the target element
+if (target) {
+  observer.observe(target);
+}
